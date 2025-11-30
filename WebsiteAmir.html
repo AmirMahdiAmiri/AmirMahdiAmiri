@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Mahdi Amiri - Personal Website</title>
+  <!-- استایل fullPage -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #A18FFF, #ffffff, #00A1FF);
+      color: #333;
+      text-align: center;
+    }
+    h1, h2 {
+      margin: 0;
+    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 40px;
+    }
+    /* استایل عکس پروفایل */
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;   /* دایره‌ای کردن عکس */
+      object-fit: cover;    /* برش مناسب */
+      margin-bottom: 20px;
+      border: 4px solid #fff; /* قاب سفید دور عکس */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* سایه زیبا */
+    }
+    .about p, .skills p, .footer p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+    }
+    .social-links a {
+      margin: 0 15px;
+      color: #FF6600;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .skills p span {
+      display: inline-block;
+      margin: 5px;
+      background: rgba(255,255,255,0.3);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    footer {
+      font-size: 0.95rem;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #FF6600;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div id="fullpage">
+  <!-- هدر -->
+  <div class="section header">
+    <!-- این خطی هست که باید آدرس یا نام فایل عکست رو بذاری -->
+    <img src="https://s6.uupload.ir/files/img_2196_p217.jpeg" alt="Amir Mahdi Amiri" class="profile-pic">
+    <h1>Amir Mahdi Amiri</h1>
+    <h2>ترکیبی از خلاقیت و تکنولوژی با علاقه به کامپیوتر</h2>
+  </div>
+
+  <!-- درباره من -->
+  <div class="section about">
+    <h2>درباره من</h2>
+    <p>عاشق تکنولوژی و کامپیوترم، همیشه دنبال تجربه‌های جدید و پروژه‌های خفن دیجیتال هستم! 🚀</p>
+  </div>
+
+  <!-- راه‌های ارتباطی -->
+  <div class="section contact">
+    <h2>راه‌های ارتباطی</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/amir_mahdi_amiri96" target="_blank">Instagram</a>
+      <a href="https://t.me/Tech_Amir" target="_blank">Telegram</a>
+      <a href="mailto:Amir.88.mahdi.75.amiri@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <!-- مهارت‌ها -->
+  <div class="section skills">
+    <h2>مهارت‌ها</h2>
+    <p>
+      <span>Python</span>
+      <span>C#</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>طراحی وب و گرافیک</span>
+      <span>ادیت و تولید محتوا</span>
+      <span>تکنولوژی و نوآوری</span>
+    </p>
+  </div>
+
+  <!-- فوتر -->
+  <div class="section footer">
+    <footer>
+      <p>© 2025 امیرمهدی امیری | All rights reserved</p>
+      <p>ممنون که از سایت شخصی من دیدن کردید!🤍برای دیدن پروژه‌ها و تجربه‌های تکنولوژی من، من را در اینستاگرام و تلگرام دنبال کنید!</p>
+      <div>
+        <a href="https://www.instagram.com/amir_mahdi_amiri96" target="_blank">Instagram</a>
+        <a href="https://t.me/Tech_Amir" target="_blank">Telegram</a>
+        <a href="mailto:Amir.88.mahdi.75.amiri@gmail.com">Email</a>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<!-- اسکریپت fullPage -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+<script>
+  new fullpage('#fullpage', {
+    autoScrolling: true,
+    navigation: true,
+    anchors: ['home', 'about', 'contact', 'skills', 'footer'],
+    navigationTooltips: ['خانه', 'درباره من', 'ارتباط', 'مهارت‌ها', 'پایان'],
+    showActiveTooltip: true
+  });
+</script>
+
+</body>
+</html>
